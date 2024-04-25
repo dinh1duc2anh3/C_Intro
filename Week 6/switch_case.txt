@@ -1,0 +1,20 @@
++ Khi một case của lệnh switch được tìm thấy, các lệnh
+được thực hiện bắt đầu từ điểm này 
+• Nó tiếp tục thực hiện tất cả các lệnh tiếp theo trừ khi gặp phải một lệnh break
++ VD:
+    int a = 1; 
+    switch ( a ) {
+        case 1:
+            printf("a=1\n"); 
+        case 2:
+            printf("a=2\n"); 
+        break;
+        case 3:
+            printf("a=3\n");
+    }
+    
+    => trong chương trình, dù a= 1 nhưng output là 
+        a=1 
+        a=2
+        (dù a != 2 nhưng khi case a=1 đúng thì lại không có lệnh break nên cứ tiếp tục thực hiện lệnh , cho tới khi gặp được break ở case 2;)      
++
